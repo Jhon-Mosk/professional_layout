@@ -1,1 +1,2 @@
-# -professional_layout
+# professional_layout
+Учебный макет интернет магазина в ГикБрейнс в 1 четверти.
