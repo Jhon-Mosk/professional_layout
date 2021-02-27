@@ -1,0 +1,36 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222222;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__menu {
+  background: transparent;
+  border: none;
+  margin-right: 34px;
+}
+
+.header__person-link {
+  margin-right: 33px;
+}
+/*# sourceMappingURL=style.css.map */
