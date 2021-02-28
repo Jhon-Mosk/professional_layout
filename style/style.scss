@@ -13,6 +13,7 @@ $light-text: #5D5D5D;
 $item-back: #F8F8F8;
 $product-button: #F26376;
 $email-back: #E1E1E1;
+$menu-text: #6F6E6E;
 $default-font: 'Lato',
 sans-serif;
 
@@ -53,6 +54,7 @@ body {
 
 .header {
     background-color: $header-feature-footer-background;
+    position: relative;
 
     &__wrapper {
         display: flex;
@@ -65,8 +67,48 @@ body {
         margin-right: 41px;
     }
 
+    &__menu:hover {
+
+        & .header__navigation {
+            display: block;
+        }
+    }
+
     &__navigation {
         display: none;
+    }
+
+    &__navigation {
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        width: 232px;
+        padding: 37px 34px;
+        background: $white;
+
+        &__title {
+            @include font-parameter(14px, 700, 17px);
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        &__subtitle {
+            @include font-parameter(14px, 400, 17px);
+            text-transform: uppercase;
+            margin: 20px 0 12px;
+            color: $mark;
+        }
+
+        &__item {
+            @include font-parameter(14px, 400, 17px);
+            text-decoration: none;
+            color: $menu-text;
+
+            &_margin {
+                margin-bottom: 11px;
+            }
+        }
     }
 
     &__menu {
@@ -81,7 +123,7 @@ body {
 
     &__cart {
         text-decoration: none;
-        position: absolute;
+        position: relative;
 
         &__count {
             background: $mark;
@@ -91,8 +133,8 @@ body {
             @include font-parameter(12px, 400, 19px);
             color: $white;
             text-align: center;
-            position: relative;
-            top: -37px;
+            position: absolute;
+            top: -22px;
             left: 25px;
         }
     }
@@ -368,6 +410,16 @@ body {
             &:hover {
                 background: $mark;
                 color: $white;
+            }
+
+            &_mark {
+                background: $mark;
+                color: $white;
+
+                &:hover {
+                    color: black;
+                    background: $white;
+                }
             }
         }
     }
