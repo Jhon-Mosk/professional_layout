@@ -417,6 +417,12 @@ body {
   margin-bottom: 32px;
 }
 
+.feedback__subscribe__input-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .feedback__subscribe__email {
   width: 256px;
   border-top-left-radius: 30px;

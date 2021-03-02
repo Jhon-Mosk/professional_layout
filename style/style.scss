@@ -355,6 +355,10 @@ body {
             margin-bottom: 32px;
         }
 
+        &__input-wrap {
+            display: flex;
+        }
+
         &__email {
             width: 256px;
             border-top-left-radius: 30px;
