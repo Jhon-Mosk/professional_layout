@@ -9,9 +9,9 @@ let overlay = document.getElementById('overlay');
 button.addEventListener('click', function () {
         navigation.classList.toggle('display-block');
         overlay.classList.toggle('display-block');
-    }),
+    })
 
-    closeButton.addEventListener('click', function () {
+closeButton.addEventListener('click', function () {
         navigation.classList.toggle('display-block-none');
         overlay.classList.toggle('display-block-none');
     });
