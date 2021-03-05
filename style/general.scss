@@ -1,27 +1,6 @@
-// :root {
-//     --dark-blue: #222222;
-// }
+@import "_mixin";
+@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
-
-$header-feature-footer-background: #222222;
-$brand-background: #F1E4E6;
-$mark: #F16D7F;
-$white: #FFFFFF;
-$blackout: rgba(33, 22, 22, 0.3);
-$lightest-text: #9F9F9F;
-$light-text: #5D5D5D;
-$item-back: #F8F8F8;
-$product-button: #F26376;
-$email-back: #E1E1E1;
-$menu-text: #6F6E6E;
-$default-font: 'Lato',
-sans-serif;
-
-@mixin font-parameter ($size: 13px, $weight: 400, $height: 16px) {
-    font-size: $size;
-    font-weight: $weight;
-    line-height: $height;
-}
 
 body {
     font-family: $default-font;
@@ -29,6 +8,14 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-block-none {
+    display: none;
 }
 
 .limiter {
@@ -64,21 +51,38 @@ body {
     }
 
     &__logo {
+        text-decoration: none;
         margin-right: 41px;
     }
 
-    &__menu:hover {
+    &__search {
+        text-decoration: none;
+        fill: $header-icon;
+    }
 
-        & .header__navigation {
-            display: block;
+    &__search:hover {
+        fill: $mark;
+    }
+
+    &__menu {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 34px;
+
+        &__img {
+            fill: $header-icon
+        }
+    }
+
+    &__menu:hover {
+        &>.header__menu__img {
+            fill: $mark;
         }
     }
 
     &__navigation {
+        z-index: 1;
         display: none;
-    }
-
-    &__navigation {
         box-sizing: border-box;
         position: absolute;
         right: 0;
@@ -86,6 +90,13 @@ body {
         width: 232px;
         padding: 37px 34px;
         background: $white;
+
+        &__cross {
+            position: absolute;
+            top: 16px;
+            left: 204px;
+            fill: $menu-text;
+        }
 
         &__title {
             @include font-parameter(14px, 700, 17px);
@@ -98,6 +109,10 @@ body {
             text-transform: uppercase;
             margin: 20px 0 12px;
             color: $mark;
+
+            &__items-wrap {
+                padding-left: 20px;
+            }
         }
 
         &__item {
@@ -111,19 +126,20 @@ body {
         }
     }
 
-    &__menu {
-        background: transparent;
-        border: none;
-        margin-right: 34px;
-    }
-
     &__person-link {
         margin-right: 33px;
+        fill: $header-icon;
+        text-decoration: none;
+    }
+
+    &__person-link:hover {
+        fill: $mark;
     }
 
     &__cart {
         text-decoration: none;
         position: relative;
+        fill: $header-icon;
 
         &__count {
             background: $mark;
@@ -138,10 +154,24 @@ body {
             left: 25px;
         }
     }
+
+    &__cart:hover {
+        fill: $mark;
+    }
 }
 
 .brand {
     display: flex;
+    position: relative;
+
+    &__overlay {
+        display: none;
+        min-height: 765px;
+        position: absolute;
+        width: 100%;
+        content: '';
+        background: $brand-overlay;
+    }
 
     &__title-wrapper {
         background: $brand-background;
@@ -225,6 +255,7 @@ body {
 
 .product {
     margin-bottom: 100px;
+    // fill="#E8E8E8"
 
     &__title {
         text-align: center;
@@ -248,6 +279,39 @@ body {
     &__item {
         max-width: 360px;
         background: $item-back;
+        position: relative;
+
+        &__img {
+
+            &__overlay {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                position: absolute;
+                background: $product-item-overlay;
+                min-height: 420px;
+                width: 100%;
+
+                &__btm {
+                    text-decoration: none;
+                    padding: 0 13px;
+                    align-items: center;
+                    justify-content: space-between;
+                    display: flex;
+                    border: 1px solid $white;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    @include font-parameter(14px, 400, 17px);
+                    color: $white;
+                    min-height: 43px;
+                    min-width: 138px;
+                    margin: 0 auto;
+                    fill: $white;
+                }
+            }
+        }
+
 
         &__title {
             text-transform: uppercase;
@@ -267,6 +331,15 @@ body {
         }
     }
 
+    &__item:hover,
+    &__item:focus {
+
+        &>.product__item__img__overlay {
+            display: flex;
+
+        }
+    }
+
     &__button {
         @include font-parameter(16px, 400, 19px);
         color: $product-button;
@@ -275,6 +348,15 @@ body {
         padding: 14px 39px;
         margin: 0 auto;
         display: block;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            color: $white;
+            background: $product-button;
+        }
     }
 }
 
@@ -327,8 +409,11 @@ body {
         align-items: center;
 
         &__face {
+            width: 96px;
+            height: 96px;
             border-radius: 50%;
             margin-bottom: 30px;
+            background: url(../image/feedback-face.jpg);
         }
 
         &__desc {
@@ -355,6 +440,10 @@ body {
             margin-bottom: 32px;
         }
 
+        &__input-wrap {
+            display: flex;
+        }
+
         &__email {
             width: 256px;
             border-top-left-radius: 30px;
@@ -364,6 +453,10 @@ body {
             background: $email-back;
             padding-left: 22px;
             opacity: 0.67;
+
+            &:focus {
+                opacity: 1;
+            }
         }
 
         &__btm {
@@ -375,6 +468,13 @@ body {
             background: $mark;
             @include font-parameter(14px, 400, 17px);
             color: $white;
+            transition: 0.5s;
+
+            &:hover,
+            &:focus {
+                background: $white;
+                color: $mark;
+            }
         }
     }
 }
@@ -406,17 +506,21 @@ body {
             text-align: center;
             margin-left: 7px;
             font-size: 14px;
+            transition: all 0.5s;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 background: $mark;
                 color: $white;
+                transform: scale(1.1);
             }
 
             &_mark {
                 background: $mark;
                 color: $white;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     color: black;
                     background: $white;
                 }
