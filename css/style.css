@@ -755,7 +755,7 @@ body {
   opacity: 0.67;
 }
 
-.feedback__subscribe__email:focus {
+.feedback__subscribe__email:focus, .feedback__subscribe__email:hover {
   opacity: 1;
 }
 
@@ -891,8 +891,8 @@ body {
   margin-bottom: 0;
 }
 
-.registration__form__input:focus {
-  outline: #F16D7F solid !important;
+.registration__form__input:focus, .registration__form__input:hover {
+  border: 3px solid #F16D7F;
 }
 
 .registration__form__gender-wrap {
@@ -925,6 +925,10 @@ body {
 }
 
 .registration__form__gender:checked + .registration__form__gender-label::before {
+  background-color: #F16D7F;
+}
+
+.registration__form__gender:hover + .registration__form__gender-label::before {
   background-color: #F16D7F;
 }
 
@@ -1073,8 +1077,8 @@ body {
   color: #5D5D5D;
 }
 
-.cart__item__desc__number:focus {
-  outline: #F16D7F solid !important;
+.cart__item__desc__number:focus, .cart__item__desc__number:hover {
+  border: 3px solid #F16D7F;
 }
 
 .cart__button {
@@ -1131,8 +1135,8 @@ body {
   margin-bottom: 34px;
 }
 
-.cart__form__input:focus {
-  outline: #F16D7F solid !important;
+.cart__form__input:focus, .cart__form__input:hover {
+  border: 3px solid #F16D7F;
 }
 
 .cart__form__button {
