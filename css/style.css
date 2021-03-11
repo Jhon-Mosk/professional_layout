@@ -1312,6 +1312,12 @@ body {
   padding: 60px 0;
 }
 
+@media all and (max-width: 479px) {
+  .title__text {
+    text-align: center;
+  }
+}
+
 .registration {
   margin: 64px 0 96px;
 }
@@ -1321,8 +1327,32 @@ body {
   justify-content: space-between;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .registration__wrap {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .registration__wrap {
+    flex-direction: column;
+  }
+}
+
 .registration__form {
   max-width: 360px;
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .registration__form {
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .registration__form {
+    margin-bottom: 40px;
+  }
 }
 
 .registration__form__title {
@@ -1450,6 +1480,22 @@ body {
   font-weight: 300;
   line-height: 29px;
   font-style: normal;
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .registration__plus {
+    max-width: 500px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .registration__plus {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    font-style: normal;
+    max-width: 354px;
+  }
 }
 
 .registration__plus__title {
