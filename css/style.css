@@ -914,6 +914,14 @@ body {
   min-width: 138px;
   margin: 0 auto;
   fill: #FFFFFF;
+  transition: all 0.5s ease-out;
+}
+
+.product__item__img__overlay__button:hover, .product__item__img__overlay__button:focus {
+  transform: scale(1.1);
+  fill: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
 }
 
 .product__item__title {
@@ -1536,6 +1544,7 @@ body {
   .cart__wrap {
     flex-direction: column;
     padding: 39px 0 96px;
+    align-items: center;
   }
 }
 
@@ -1914,7 +1923,7 @@ body {
   color: #F16D7F;
 }
 
-.cart__form__total__delimeter {
+.cart__form__total__delimiter {
   border: 1px solid #E8E8E8;
   margin-bottom: 17px;
 }
