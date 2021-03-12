@@ -1,139 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -268,8 +133,182 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black/Lato-Black.eot");
+  src: local("☺"), url("../fonts/Lato-Black/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black/Lato-Black.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold/Lato-Bold.eot");
+  src: local("☺"), url("../fonts/Lato-Bold/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold/Lato-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Italic/Lato-Italic.eot");
+  src: local("☺"), url("../fonts/Lato-Italic/Lato-Italic.woff") format("woff"), url("../fonts/Lato-Italic/Lato-Italic.ttf") format("truetype"), url("../fonts/Lato-Italic/Lato-Italic.svg") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Light/Lato-Light.eot");
+  src: local("☺"), url("../fonts/Lato-Light/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light/Lato-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular/Lato-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -694,20 +733,22 @@ body {
 }
 
 .offers__item {
+  text-align: center;
   width: 360px;
   min-height: 260px;
   background: #2116164d;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   font-style: normal;
-  color: #FFFFFF;
+  transition: all 0.5s ease-out;
+}
+
+.offers__item:hover, .offers__item:focus {
+  border: 5px solid #F16D7F;
+  box-sizing: border-box;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -738,23 +779,33 @@ body {
   }
 }
 
+.offers__item__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .offers__item_women {
-  background: url(../image/offer-for-women-img.jpg);
+  background: url(../image/offer/offer-for-women-img.jpg);
   background-size: cover;
 }
 
 .offers__item_men {
-  background: url(../image/offer-for-men-img.jpg);
+  background: url(../image/offer/offer-for-men-img.jpg);
   background-size: cover;
 }
 
 .offers__item_kids {
-  background: url(../image/offer-for-kids-img.jpg);
+  background: url(../image/offer/offer-for-kids-img.jpg);
   background-size: cover;
 }
 
 .offers__item_accesories {
-  background: url(../image/offer-accesories-img.jpg);
+  background: url(../image/offer/offer-accesories-img.jpg);
   background-size: cover;
   width: 100%;
   min-height: 180px;
@@ -864,25 +915,9 @@ body {
   position: relative;
 }
 
-@media all and (min-width: 992px) and (max-width: 1199px) {
-  .product__item__img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .product__item__img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media all and (max-width: 479px) {
-  .product__item__img {
-    width: 100%;
-    height: auto;
-  }
+.product__item__img {
+  width: 100%;
+  height: 420px;
 }
 
 .product__item__img__overlay {
@@ -952,14 +987,16 @@ body {
 }
 
 .product__button {
+  text-decoration: none;
+  text-align: center;
+  width: 211px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 47px;
   font-style: normal;
   color: #F26376;
   background: none;
   border: 1px solid #F26376;
-  padding: 14px 39px;
   margin: 0 auto;
   display: block;
   transition: all 0.5s ease-out;
@@ -1061,7 +1098,7 @@ body {
 }
 
 .feedback {
-  background: url(../image/feedback-back.jpg);
+  background: url(../image/feedback/feedback-back.jpg);
   background-size: cover;
 }
 
@@ -1122,7 +1159,7 @@ body {
   height: 96px;
   border-radius: 50%;
   margin-bottom: 30px;
-  background: url(../image/feedback-face.jpg);
+  background: url(../image/feedback/feedback-face.jpg);
 }
 
 .feedback__speech__desc {
@@ -1272,7 +1309,7 @@ body {
   width: 32px;
   height: 32px;
   display: inline-block;
-  line-height: 32px;
+  line-height: 36px;
   text-align: center;
   margin-left: 7px;
   font-size: 14px;
@@ -1323,6 +1360,33 @@ body {
   .title__text {
     text-align: center;
   }
+}
+
+.title__breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+.title__breadcrumb__item {
+  display: inline;
+  font-size: 18px;
+}
+
+.title__breadcrumb__item:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.title__breadcrumb__link {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.title__breadcrumb__link:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
 
 .registration {
