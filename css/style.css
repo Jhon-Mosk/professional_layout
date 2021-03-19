@@ -545,6 +545,7 @@ body {
   width: 100%;
   content: '';
   background: #222222;
+  opacity: 0.5;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -834,6 +835,10 @@ body {
 
 .product {
   margin-bottom: 100px;
+}
+
+.product_margin {
+  margin: 129px auto;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -1344,6 +1349,7 @@ body {
   width: 100%;
   content: '';
   background: #222222;
+  opacity: 0.5;
 }
 
 .title__wrap {
@@ -2159,12 +2165,41 @@ body {
 }
 
 .card__button {
-  display: block;
+  text-decoration: none;
+  padding: 0 23px;
+  align-items: center;
+  display: flex;
+  border: 1px solid #F16D7F;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-style: normal;
+  color: #F16D7F;
+  min-height: 47px;
+  max-width: 211px;
+  margin: 0 auto;
+  fill: #F16D7F;
+  transition: all 0.5s ease-out;
+}
+
+.card__button__img {
+  margin-right: 23px;
+}
+
+.card__button:hover, .card__button:focus {
+  transform: scale(1.1);
+  fill: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-right: 23px;
+  margin-bottom: 45px;
 }
 
 .dropdown__btn {
@@ -2186,21 +2221,21 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #F7F7F7;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.dropdown__content a {
-  color: black;
+.dropdown__content__link {
+  color: #000000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown__content a:hover {
-  background-color: #ddd;
+.dropdown__content__link:hover {
+  background-color: #9F9F9F;
 }
 
 .dropdown:hover .dropdown__btn {

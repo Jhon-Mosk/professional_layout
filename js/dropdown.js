@@ -1,5 +1,5 @@
-function dropdownFunction() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
+function dropdownFunction(n) {
+    document.getElementById("dropdownMenu"+n).classList.toggle("show");
 }
 
 window.onclick = function (event) {
