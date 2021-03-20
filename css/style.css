@@ -2103,6 +2103,12 @@ body {
   }
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .slider {
+    height: 624px;
+  }
+}
+
 @media all and (max-width: 479px) {
   .slider {
     height: 624px;
@@ -2118,6 +2124,12 @@ body {
 @media all and (min-width: 768px) and (max-width: 991px) {
   .slider__wrapper {
     height: 565px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .slider__wrapper {
+    height: 454px;
   }
 }
 
